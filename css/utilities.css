@@ -1,0 +1,360 @@
+/* 
+-----------------------------------
+RESETS
+-----------------------------------
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* 
+-----------------------------------
+CONTAINERS
+-----------------------------------
+*/
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container--md {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.container--sm {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+-----------------------------------
+FLEXBOX LAYOUTS
+-----------------------------------
+*/
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--row {
+}
+
+.flex--col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--s {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex--sb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--se {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* 
+-----------------------------------
+GRID LAYOUTS
+-----------------------------------
+*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .grid--1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* 
+-----------------------------------
+TEXT STYLES
+-----------------------------------
+*/
+.text--primary {
+  color: var(--primary-color);
+}
+
+.text--secondary {
+  color: var(--secondary-color);
+}
+
+.text--dark {
+  color: var(--dark-color);
+}
+
+.text--light {
+  color: var(--light-color);
+}
+
+/* 
+-----------------------------------
+FONT SIZES
+-----------------------------------
+*/
+.font--lead {
+  font-size: 20px;
+}
+
+.font--sm {
+  font-size: 1.6rem;
+}
+
+.font--md {
+  font-size: 2rem;
+}
+
+.font--lg {
+  font-size: 3rem;
+}
+
+.font--xl {
+  font-size: 4rem;
+}
+
+.font--xxl {
+  font-size: 5rem;
+}
+
+.font--xxxl {
+  font-size: 10rem;
+}
+
+@media (max-width: 768px) {
+  .font--lead {
+    font-size: 20px;
+  }
+
+  .font--sm {
+    font-size: 1.2rem;
+  }
+
+  .font--md {
+    font-size: 1.6rem;
+  }
+
+  .font--lg {
+    font-size: 2rem;
+  }
+
+  .font--xl {
+    font-size: 3rem;
+  }
+
+  .font--xxl {
+    font-size: 4rem;
+  }
+
+  .font--xxxl {
+    font-size: 10rem;
+  }
+}
+
+/* 
+-----------------------------------
+MARGIN STYLES - ALL ROUND
+-----------------------------------
+*/
+.m--1 {
+  margin: 1rem;
+}
+
+.m--2 {
+  margin: 1.5rem;
+}
+
+.m--3 {
+  margin: 2rem;
+}
+
+.m--4 {
+  margin: 3rem;
+}
+
+.m--5 {
+  margin: 4rem;
+}
+
+/* 
+-----------------------------------
+MARGIN STYLES - TOP AND BOTTOM
+-----------------------------------
+*/
+.my--1 {
+  margin: 1rem 0;
+}
+
+.my--2 {
+  margin: 1.5rem 0;
+}
+
+.my--3 {
+  margin: 2rem 0;
+}
+
+.my--4 {
+  margin: 3rem 0;
+}
+
+.my--5 {
+  margin: 4rem 0;
+}
+
+.my--9 {
+  margin: 10rem 0;
+}
+
+/* 
+-----------------------------------
+MARGIN STYLES - LEFT AND RIGHT
+-----------------------------------
+*/
+.mx--1 {
+  margin: 0 1rem;
+}
+
+.mx--2 {
+  margin: 0 1.5rem;
+}
+
+.mx--3 {
+  margin: 0 2rem;
+}
+
+.mx--4 {
+  margin: 0 3rem;
+}
+
+.mx--5 {
+  margin: 0 4rem;
+}
+
+/* 
+-----------------------------------
+PADDING STYLES - ALL ROUND
+-----------------------------------
+*/
+.p--1 {
+  padding: 1rem;
+}
+
+.p--2 {
+  padding: 1.5rem;
+}
+
+.p--3 {
+  padding: 2rem;
+}
+
+.p--4 {
+  padding: 3rem;
+}
+
+.p--5 {
+  padding: 4rem;
+}
+
+/* 
+-----------------------------------
+PADDING STYLES - TOP AND BOTTOM 
+-----------------------------------
+*/
+.py--1 {
+  padding: 1rem 0;
+}
+
+.py--2 {
+  padding: 1.5rem 0;
+}
+
+.py--3 {
+  padding: 2rem 0;
+}
+
+.py--4 {
+  padding: 3rem 0;
+}
+
+.py--5 {
+  padding: 4rem 0;
+}
+
+/* 
+-----------------------------------
+PADDING STYLES - LEFT AND RIGHT
+-----------------------------------
+*/
+.px--1 {
+  padding: 0 1rem;
+}
+
+.px--2 {
+  padding: 0 1.5rem;
+}
+
+.px--3 {
+  padding: 0 2rem;
+}
+
+.px--4 {
+  padding: 0 3rem;
+}
+
+.px--5 {
+  padding: 0 4rem;
+}

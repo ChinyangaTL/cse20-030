@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/transitions.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon.jpg"
+    />
+    <title>Thank You | Explore Kyoto</title>
+    <script defer src="./js/slideshow.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="transition transition-2 is-active"></div>
+
+    <main>
+      <section class="showcase">
+        <div class="overlay"></div>
+        <div class="hero__slides" id="hero__slides">
+          <!-- <video
+            class="hero__slides__slide active"
+            src="./video/night.mp4"
+            autoplay
+            muted
+            loop
+          ></video> -->
+          <img src="./img/thankyou/thankyou2.jpg" alt="main hero" class="hero__slides__slide active ">
+          <img class="hero__slides__slide" src="./img/thankyou/thankyou1.jpg" alt="beauty slide" />
+          <img class="hero__slides__slide" src="./img/thankyou/thankyou3.jpg" alt="culture slide" />
+          <img class="hero__slides__slide" src="./img/thankyou/thankyou4.jpg" alt="adventure slide" />
+        </div>
+        <div class="hero__container container flex-s">
+          <nav id="navbar" class="navbar flex--sb">
+            <a href="index.html" class="navbar__logo font--md text--primary">Kyoto</a>
+            <ul class="navbar__links">
+              <li class="mx--2"><a href="index.html" class="font--md hidden">Home</a></li>
+              <li class="mx--2"><a href="about.html" class="font--md">About</a></li>
+              <li class="mx--2"><a href="lifestyle.html" class="font--md">Lifestyle</a></li>
+              <li class="mx--2"><a href="events.html" class="font--md">Events</a></li>
+              <li class="mx--2">
+                <a href="connect.html" class="font--md">Connect With Us</a>
+              </li>
+            </ul>
+            <span class="hamburger"></span>
+          </nav>
+
+          <div class="hero__content">
+            <div class="text-wrapper px-2" id="slide__text">
+              <div class="active">
+                  <h3 class="font--xxl">Thank You!</h3>
+                  <h3 class="font--xl japanese">ありがとうございました</h3>
+              </div>
+              <div>
+                <h3 class="font--xxl">We Love You</h3>
+                <h3 class="font--xl japanese">私たちはあなたを愛してます</h3>
+              </div>
+              <div>
+                <h3 class="font--xxl">Think of something</h3>
+                <h3 class="font--xl japanese">猫はズボンを食べる</h3>
+              </div>
+              <div>
+                <h3 class="font--xxl">Have a great day</h3>
+                <h3 class="font--xl japanese">すてきな一日を</h3>
+              </div>
+            </div>
+          </div>
+
+          <ul class="hero__controls">
+            <li class="hero__control hero__control--left"></li>
+            <li class="hero__control hero__control--right"></li>
+          </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer container flex--se">
+           <div class="footer__links">
+             <h3 class="footer__title my--3 font--lg">Find Us On</h3>
+             <ul>
+               <li><a href="https://www.facebook.com/visitkyoto/" target="_blank" class="blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+               <li><a href="https://twitter.com/visitkyoto?lang=en" target="_blank" class="blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+               <li><a href="https://www.instagram.com/visit_kyoto/?hl=en" target="_blank" class="blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+             </ul>
+           </div>
+           <div class="footer__links">
+            <h3 class="footer__title my--3 font--lg">Contact Us</h3>
+            <ul>
+              <li><a href="connect.html">Sign Up To Our Newsletter</a></li>
+              <li><a href="https://github.com/ChinyangaTL" target="_blank" class="blank">Report a Problem</a></li>
+              <li><a href="https://github.com/ChinyangaTL" target="_blank" class="blank">Site Feedback</a></li>
+            </ul>
+          </div>  
+          <div class="footer__links">
+            <h3 class="footer__title my--3 font--lg">More About Our City</h3>
+            <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Kyoto" target="_blank" class="blank">In depth</a></li>
+              <li><a href="https://www.britannica.com/place/Kyoto-Japan" target="_blank" class="blank">Summarized</a></li>
+              <li><a href="https://www.kyototourism.org/en/" target="_blank" class="blank">A better Kyoto Website</a></li>
+            </ul>
+          </div> 
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

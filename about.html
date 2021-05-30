@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/transitions.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon.jpg"
+    />
+    <title>About Kyoto | Explore Kyoto</title>
+    <script defer src="./js/weather.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="transition transition-2 is-active"></div>
+
+    <main>
+      <section class="showcase--2">
+        <div class="overlay"></div>
+        <div class="hero__slides" id="hero__slides">
+          <img
+            class="hero__slides__slide active"
+            src="./img/about/about-hero.jpg"
+            alt="about hero"
+          />
+        </div>
+        <div class="discover-japan">
+          <img
+            src="https://www.kyototourism.org/wp/wp-content/themes/kyototourism/assets/images/discoverkyoto/discover_japan.png"
+            alt="A map of Japan showing the location of Kyoto Prefecture"
+          />
+        </div>
+        <div class="hero__container container">
+          <nav id="navbar" class="navbar flex--sb">
+            <a href="index.html" class="navbar__logo font--md text--primary"
+              >Kyoto</a
+            >
+            <ul class="navbar__links">
+              <li class="mx--2">
+                <a href="index.html" class="font--md hidden">Home</a>
+              </li>
+              <li class="mx--2">
+                <a href="about.html" class="font--md">About</a>
+              </li>
+              <li class="mx--2">
+                <a href="lifestyle.html" class="font--md">Lifestyle</a>
+              </li>
+              <li class="mx--2">
+                <a href="events.html" class="font--md">Events</a>
+              </li>
+              <li class="mx--2">
+                <a href="connect.html" class="font--md">Connect With Us</a>
+              </li>
+            </ul>
+            <span class="hamburger"></span>
+          </nav>
+
+          <div class="hero__content--2">
+            <div class="text-wrapper px-2">
+              <h2 class="font--xxl">About Kyoto</h2>
+              <h2 class="font--md japanese">京都について</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro my--4 px--3">
+        <div class="text-wrapper container--sm">
+          <p class="font--md">
+            Kyoto, Japanese: 京都, Kyōto, officially Kyoto City (京都市,
+            Kyōto-shi), is the capital city of Kyoto Prefecture in Japan.
+            Located in the Kansai region on the island of Honshu, Kyoto forms a
+            part of the Keihanshin metropolitan area along with Osaka and Kobe.
+            As of 2021, the city had a population of 1.45 million, making up 57%
+            of the prefecture's total population.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="weather__component container--sm">
+          <div class="info__wrapper">
+            <div class="wrapper--date">
+              <h2 class="date" id="date">Saturday, 12 July</h2>
+            </div>
+            <div class="weather__wrapper">
+              <div class="weather__icon">
+                <img src="./icons/weather/unknown.png" alt="weather icon" />
+              </div>
+              <div class="weather__temp-high">
+                <h3 class="weather__label">
+                  Temp,<br />
+                  high
+                </h3>
+                <p class="weather__unit" id="temp-high">26.2°C</p>
+              </div>
+              <div class="weather__temp-low">
+                <h3 class="weather__label">
+                  Temp,<br />
+                  low
+                </h3>
+                <p class="weather__unit" id="temp-low">14.2°C</p>
+              </div>
+              <div class="weather__humidity">
+                <h3 class="weather__label">UVI</h3>
+                <p class="weather__unit" id="humidity">2 mm</p>
+              </div>
+              <div class="weather__wind">
+                <h3 class="weather__label">Wind</h3>
+                <p class="weather__unit" id="wind">2 m/s</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cards" class="section my--5">
+        <div class="container--md grid p--1">
+          <div class="card img--card">
+            <img src="./img/about/cards/cuisine.jpg" alt="cuisine card" />
+            <h4 class="card__title">Cuisine</h4>
+            <div class="text-wrapper">
+              <h4 class="card__title--hover">Cuisine</h4>
+              <br />
+              <p class="font--md">
+                Learn about some of the best cuisine Kyoto has to offer
+              </p>
+            </div>
+            <a href="#intro--cuisine" class="more-link same"></a>
+          </div>
+          <div class="card img--card">
+            <img src="./img/about/cards/history.jpg" alt="history card" />
+            <h4 class="card__title">History</h4>
+            <div class="text-wrapper">
+              <h4 class="card__title--hover">History</h4>
+              <br />
+              <p class="font--md">
+                Kyoto's history is rich, and brilliant. Learn a bit.
+              </p>
+            </div>
+            <a href="#intro--history" class="more-link same"></a>
+          </div>
+          <div class="card img--card">
+            <img src="./img/about/cards/tradition.jpg " alt="tradition card" />
+            <h4 class="card__title">Tradition</h4>
+            <div class="text-wrapper">
+              <h4 class="card__title--hover">Tradition</h4>
+              <br />
+              <p class="font--md">
+                Discover a bit about Kyoto's unique and rich tradition.
+              </p>
+            </div>
+            <a href="#intro--tradition" class="more-link same"></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="intro--history" class="section px--3">
+        <div class="text-wrapper container--sm">
+          <div class="text-wrapper container--sm">
+            <h2 class="font--lg my--2">History</h2>
+            <p class="font--sm">
+              Kyoto is Japan's third largest city and also one its oldest. It
+              was originally founded as Heian in 794, and had its golden age
+              during the court's heyday from 794 to 1185. Home to many cultural
+              landmarks and historical sites, Kyoto is thought of as the heart
+              of Japan. The city still bears the name Kyoto, or "Capital City,"
+              even though the emperor and the National Diet are located in
+              Tokyo. For most of Japan's history, Heian was the center not only
+              of government but of learning and the arts.
+            </p>
+            <a href="https://www.britannica.com/place/Kyoto-Japan"
+              >Learn more about the fascinating and rich culture here</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="intro--cuisine" class="section px--3">
+        <section class="section text-wrapper container--sm">
+          <div class="text-wrapper container--sm">
+            <h2 class="font--lg my--2" style="text-align: center">
+              The Regional Specialties You Must Eat in Kyoto
+            </h2>
+            <p class="font--sm">
+              Kyoto offers some of the most exquisite, flavourful, nutritious
+              and attractively presented cuisines and dishes in all of Japan.
+              From luxurious kaseiki (multi-course meal) to humble yudofu (hot
+              tofu), Kyoto promises many unforgettable culinary experiences,
+              making it a city no epicure should miss.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section id="cuisine" class="cuisine my--5">
+        <section class="section info flex container">
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Kaseiki Ryori</h2>
+            <p class="font--sm">
+              Kyoto’s sophisticated approach to dining is best exemplified by
+              kaseiki ryori ­– multi-course haute cuisine that’s served in many
+              of the restaurants and inns in the city’s famous former geisha
+              district, Gio
+            </p>
+          </div>
+          <div class="info--img">
+            <img src="./img/about/food/kaiseki.webp" alt="kaiseki" />
+          </div>
+        </section>
+
+        <section class="section info flex container">
+          <div class="info--img">
+            <img src="./img/about/food/ninshin.webp" alt="nishin" />
+          </div>
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Nishin Soba</h2>
+            <p class="font--sm">
+              Because Kyoto is far from the coast, historically the city did not
+              have easy access to fresh seafood, so fish was often preserved to
+              make it last longer. One such popular preserved fish is Pacific
+              herring, which is known as nishin. In the 19th century, Pacific
+              herring was cooked in soy sauce and sugar to extend its shelf life
+            </p>
+          </div>
+        </section>
+
+        <section class="section info flex container">
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Kyozushi</h2>
+            <p class="font--sm">
+              Nigiri sushi, which is made with fresh, raw fish, is common in
+              many Japanese cities, but because of the lack of fresh fish in the
+              past, Kyoto developed a unique local variation of sushi known as
+              kyozushi – or Kyoto-sushi – made with fish cured with salt or
+              vinegar
+            </p>
+          </div>
+          <div class="info--img">
+            <img src="./img/about/food/kyozushi.webp" alt="kyozushi" />
+          </div>
+        </section>
+
+        <section class="section info flex container">
+          <div class="info--img">
+            <img src="./img/about/food/shojin.webp" alt="shojin" />
+          </div>
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Shojin Ryori</h2>
+            <p class="font--sm">
+              A shojin ryori meal usually includes foods of five colours – red,
+              green, white, black and yellow, which represent the five elements
+              of Japanese Buddhism – fire, wood, metal, water and earth.
+              Ingredients often include tofu, sesame seeds, and vegetables such
+              as daikon radish and eggplant
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section id="intro--tradition" class="section px--3">
+        <section class="section text-wrapper container--sm">
+          <div class="text-wrapper container--sm">
+            <h2 class="font--lg my--2" style="text-align: center">
+              Tradition and Culture
+            </h2>
+            <p class="font--sm">
+              Kyoto is the cultural heart of Japan with many of the country’s
+              unique traditions originating in the ancient capital. Many of
+              these rituals still remain and can be experienced in Kyoto’ s
+              historic areas
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section id="tradition" class="tradition my--5">
+        <section class="section info flex container">
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Maiko and Geisha</h2>
+            <p class="font--sm">
+              Maiko and Geisha (Geiko in the local dialect) are highly skilled
+              female entertainers who traditionally entertained guests at
+              teahouses and traditional restaurants in Kyoto. They are trained
+              in the performing cultural arts of classical music and dance and
+              are well versed in entertaining customers with conversation and
+              traditional games. They began to emerge in Kyoto after the
+              imperial court moved the capital to Heian-kyo (Kyoto) in 794.
+              Maiko and Geisha can still be found in the Gion area of Kyoto in
+              its historic areas such as Hanami-koji Street and Pontocho.
+            </p>
+          </div>
+          <div class="info--img">
+            <img src="./img/about/tradition/maikogeisha.png" alt="geisha" />
+          </div>
+        </section>
+
+        <section class="section info flex container">
+          <div class="info--img">
+            <img src="./img/about/tradition/kimono.jpg" alt="kimono" />
+          </div>
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Kimono</h2>
+            <p class="font--sm">
+              The beautiful traditional Japanese attire of kimono is a cultural
+              tradition in Japan that still exists and is worn on special
+              occasions in modern Japanese life. The current style of kimono,
+              where the kimono opens from the front and is tied with a kimono
+              sash called obi, developed in the Edo Period (1603-1868) in Kyoto
+              . The Nishijin district located in the northwest of central Kyoto
+              is the source of all those stunning kimono fabric and obi and is a
+              great place to catch a kimono show or for a spot of kimono
+              shopping. To fully immerse yourself in the culture of Kyoto, you
+              can rent a kimono and take a pleasant stroll around the city’s old
+              streets and historic areas.
+            </p>
+          </div>
+        </section>
+
+        <section class="section info flex container">
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Yuzen Dyeing</h2>
+            <p class="font--sm">
+              Yuzen Dyeing is a traditional dyeing technique used to create the
+              brilliantly coloured and picturesque designs of Yuzen Kimono. The
+              history of Yuzen Dyeing dates back to the Genroku Period
+              (1688-1704), with local artist Miyazaki Yuzen creating this unique
+              technique near Chion-in Temple. A few shops in Kyoto still carry
+              out this tradition with the masters painstakingly working to
+              create these masterpieces of fashion and art.
+            </p>
+          </div>
+          <div class="info--img">
+            <img src="./img/about/tradition/yuzen.jpg" alt="yuzen" />
+          </div>
+        </section>
+
+        <section class="section info flex container">
+          <div class="info--img">
+            <img src="./img/about/tradition/tea.jpg" alt="tea" />
+          </div>
+          <div class="info--text px--2">
+            <h2 class="font--md my--2">Tea Ceremony</h2>
+            <p class="font--sm">
+              The Japanese Tea Ceremony, or “The Way of Tea”, is one of Kyoto’s
+              best known cultural traditions and can still be enjoyed at one of
+              Kyoto’s many traditional teahouses. Deeply rooted in Zen Buddhism
+              with its slow and gracefully movements, it was popular with Kyoto
+              nobles back in the day. Kyoto remains the spiritual home of the
+              tea ceremony as well as tea growing.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <div class="footer container flex--se">
+          <div class="footer__links">
+            <h3 class="footer__title my--3 font--lg">Find Us On</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/visitkyoto/"
+                  target="_blank"
+                  class="blank"
+                  ><i class="fab fa-facebook"></i>Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/visitkyoto?lang=en"
+                  target="_blank"
+                  class="blank"
+                  ><i class="fab fa-twitter"></i>Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/visit_kyoto/?hl=en"
+                  target="_blank"
+                  class="blank"
+                  ><i class="fab fa-instagram"></i>Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h3 class="footer__title my--3 font--lg">Contact Us</h3>
+            <ul>
+              <li><a href="connect.html">Sign Up To Our Newsletter</a></li>
+              <li>
+                <a
+                  href="https://github.com/ChinyangaTL"
+                  target="_blank"
+                  class="blank"
+                  >Report a Problem</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/ChinyangaTL"
+                  target="_blank"
+                  class="blank"
+                  >Site Feedback</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h3 class="footer__title my--3 font--lg">More About Our City</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Kyoto"
+                  target="_blank"
+                  class="blank"
+                  >In depth</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.britannica.com/place/Kyoto-Japan"
+                  target="_blank"
+                  class="blank"
+                  >Summarized</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.kyototourism.org/en/"
+                  target="_blank"
+                  class="blank"
+                  >A better Kyoto Website</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
